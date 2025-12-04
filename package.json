@@ -2,13 +2,19 @@
   "name": "mvpfinance2025-landing",
   "version": "1.0.0",
   "description": "Landing page for IT payments and contracts service",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "validate": "node scripts/validate-build.js"
   },
   "dependencies": {},
   "devDependencies": {
     "vite": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
   }
 }
