@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Легальные выплаты и контракты для IT‑специалистов с доходом из‑за рубежа и расходами в РФ. Безопасные выплаты в 150+ стран.">
+  <meta name="keywords" content="выплаты, контракты, IT, фрилансеры, легально, зарубеж, международные платежи">
+  <meta name="author" content="MVP Finance 2025">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Легальные выплаты IT‑специалистам — MVP Finance">
+  <meta property="og:description" content="Выплаты и контракты для компаний и фрилансеров с доходом из‑за рубежа.">
+  <meta property="og:image" content="/og-image.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mvpfinance2025.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Легальные выплаты IT‑специалистам">
+  <meta name="twitter:description" content="Выплаты и контракты для компаний и фрилансеров.">
+
+  <link rel="canonical" href="https://mvpfinance2025.com">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <title>Легальные выплаты IT‑специалистам — MVP Finance 2025</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          <span>MVP Finance</span>
+        </a>
+
+        <nav class="header__nav" id="header-nav">
+          <ul class="nav-list">
+            <li><a href="#for-whom" class="nav-link">Для кого</a></li>
+            <li><a href="#how-it-works" class="nav-link">Как это работает</a></li>
+            <li><a href="#solutions" class="nav-link">Решения</a></li>
+            <li><a href="#security" class="nav-link">Безопасность</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <button class="btn-primary header__cta" data-modal="contact">
+          Оставить заявку
+        </button>
+
+        <!-- Burger Menu (Mobile) -->
+        <button class="burger-menu" id="burger-menu" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-menu__nav">
+      <ul class="mobile-nav-list">
+        <li><a href="#for-whom" class="nav-link">Для кого</a></li>
+        <li><a href="#how-it-works" class="nav-link">Как это работает</a></li>
+        <li><a href="#solutions" class="nav-link">Решения</a></li>
+        <li><a href="#security" class="nav-link">Безопасность</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+      <button class="btn-primary btn-primary--full-width" data-modal="contact">
+        Оставить заявку
+      </button>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero__background"></div>
+
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__left">
+            <h1 class="hero__title">
+              Легальные выплаты IT‑специалистам<br>
+              с зарубежным доходом — без головной боли<br>
+              с документами
+            </h1>
+
+            <p class="hero__subtitle">
+              Безопасные контракты и выплаты для компаний и фрилансеров<br>
+              с расходами в России и доходом из‑за рубежа
+            </p>
+
+            <div class="hero__actions">
+              <button class="btn-primary hero__cta" data-modal="contact">
+                Получить консультацию
+              </button>
+              <a href="#calculator" class="hero__secondary-cta">
+                ↓ Рассчитать стоимость
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__right">
+            <form class="hero-form" id="hero-form">
+              <h3 class="hero-form__title">Оставить заявку</h3>
+
+              <div class="form-group">
+                <label class="form-label">Ваше имя</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-input"
+                  placeholder="Иван Петров"
+                  required
+                >
+                <span class="form-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="ivan@example.com"
+                  required
+                >
+                <span class="form-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Телефон</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-input"
+                  placeholder="+7 (999) 123-45-67"
+                  required
+                >
+                <span class="form-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Вы:</label>
+                <select name="type" class="form-select" required>
+                  <option value="">Выберите...</option>
+                  <option value="company">Компания</option>
+                  <option value="freelancer">Фрилансер</option>
+                  <option value="agency">Агентство</option>
+                </select>
+                <span class="form-error"></span>
+              </div>
+
+              <div class="form-checkbox">
+                <input
+                  type="checkbox"
+                  name="agree"
+                  id="agree-hero"
+                  required
+                >
+                <label for="agree-hero">
+                  Согласен с <a href="#" target="_blank">политикой конфиденциальности</a>
+                </label>
+              </div>
+
+              <button type="submit" class="btn-primary btn-primary--full-width">
+                Отправить заявку
+              </button>
+
+              <p class="hero-form__hint">
+                Ответим в течение 15 минут
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- For Whom Section -->
+    <section class="for-whom" id="for-whom">
+      <div class="container">
+        <div class="section-header">
+          <h2>Для кого этот сервис</h2>
+          <p>Мы помогаем компаниям и специалистам, у которых доход в одной валюте, а расходы в другой</p>
+        </div>
+
+        <div class="cards-grid">
+          <div class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <rect x="2" y="7" width="20" height="14" rx="2" stroke-width="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" stroke-width="2"/>
+            </svg>
+            <h3 class="card__title">IT‑компании</h3>
+            <p class="card__text">
+              С зарубежными клиентами и расходами в России на сотрудников, аутстафф, серверы
+            </p>
+            <ul class="card__list">
+              <li>Контроль затрат на подрядчиков</li>
+              <li>Единые договоры и документы</li>
+              <li>Выплаты в 100+ стран</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke-width="2"/>
+              <circle cx="12" cy="7" r="4" stroke-width="2"/>
+            </svg>
+            <h3 class="card__title">IT‑специалисты</h3>
+            <p class="card__text">
+              Фрилансеры, которые получают доход из‑за рубежа и платят налоги в России
+            </p>
+            <ul class="card__list">
+              <li>Быстрые выплаты на карты</li>
+              <li>Простой кабинет</li>
+              <li>Поддержка при налогах</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke-width="2"/>
+              <circle cx="9" cy="7" r="4" stroke-width="2"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke-width="2"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke-width="2"/>
+            </svg>
+            <h3 class="card__title">Агентства</h3>
+            <p class="card__text">
+              Аутстафф / аутсорс компании с сотрудниками в России и зарубежными клиентами
+            </p>
+            <ul class="card__list">
+              <li>Master agreement</li>
+              <li>Автоматизация выплат</li>
+              <li>Единый учёт</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="section-header">
+          <h2>Почему нас выбирают</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                <path d="M12 6v6l4 2" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Выплаты в РФ и за рубеж</h3>
+            <p>В любой валюте: рубли, доллары, евро, криптовалюта (если нужно)</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke-width="2"/>
+                <polyline points="14 2 14 8 20 8" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Полный комплект документов</h3>
+            <p>Акты, инвойсы, договоры, налоговые отчёты в вашем кабинете</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-width="2"/>
+                <polyline points="22 4 12 14.01 9 11.01" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Автоматический KYC/KYB</h3>
+            <p>Проверка контрагентов и исполнителей на чёрные списки</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <line x1="12" y1="1" x2="12" y2="23" stroke-width="2"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Прозрачная комиссия</h3>
+            <p>Нет абонплаты, платите только за операции</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Поддержка RU + EN</h3>
+            <p>Помощь на русском и английском, время ответа 15 минут</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke-width="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Защита данных</h3>
+            <p>Шифрование, соответствие GDPR, конфиденциальность 100%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <h2>Как это работает</h2>
+          <p>От заявки до первых выплат за 1–3 дня</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__number">1</div>
+            <h3 class="step__title">Оставьте заявку</h3>
+            <p class="step__text">
+              Опишите вашу ситуацию: доход, расходы, валюты, количество специалистов
+            </p>
+          </div>
+
+          <div class="step__connector"></div>
+
+          <div class="step">
+            <div class="step__number">2</div>
+            <h3 class="step__title">Консультация</h3>
+            <p class="step__text">
+              Мы разработаем структуру договоров и способ выплат под ваш кейс
+            </p>
+          </div>
+
+          <div class="step__connector"></div>
+
+          <div class="step">
+            <div class="step__number">3</div>
+            <h3 class="step__title">Подключение</h3>
+            <p class="step__text">
+              KYC/KYB, подписание договоров, активация личного кабинета
+            </p>
+          </div>
+
+          <div class="step__connector"></div>
+
+          <div class="step">
+            <div class="step__number">4</div>
+            <h3 class="step__title">Выплаты</h3>
+            <p class="step__text">
+              Ваши специалисты получают выплаты, вы — полный пакет документов
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Section (Tabs) -->
+    <section class="solutions" id="solutions">
+      <div class="container">
+        <div class="section-header">
+          <h2>Решения для компаний и специалистов</h2>
+        </div>
+
+        <div class="tabs">
+          <button class="tab-button tab-button--active" data-tab="companies">
+            Для компаний
+          </button>
+          <button class="tab-button" data-tab="specialists">
+            Для специалистов
+          </button>
+        </div>
+
+        <div class="tabs-content">
+          <div class="tab-content tab-content--active" id="companies-tab">
+            <div class="tab-inner">
+              <h3>Решения для компаний</h3>
+              <ul class="tab-list">
+                <li>
+                  <strong>Контроль затрат:</strong> Единый учёт расходов на подрядчиков в разных валютах
+                </li>
+                <li>
+                  <strong>Платежи:</strong> Выплаты в 100+ стран, все документы в кабинете
+                </li>
+                <li>
+                  <strong>Договоры:</strong> Master agreement, готовые шаблоны, конфиденциальность
+                </li>
+                <li>
+                  <strong>Валюты:</strong> Поддержка рублей, долларов, EUR, крипты (если нужно)
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tab-content" id="specialists-tab">
+            <div class="tab-inner">
+              <h3>Решения для специалистов</h3>
+              <ul class="tab-list">
+                <li>
+                  <strong>Выплаты:</strong> Быстрые переводы на карты и счета в РФ
+                </li>
+                <li>
+                  <strong>Кабинет:</strong> Простой интерфейс, все контракты и выплаты в одном месте
+                </li>
+                <li>
+                  <strong>Налоги:</strong> Помощь с документами, поддержка по налогам и сборам
+                </li>
+                <li>
+                  <strong>Безопасность:</strong> KYC, соответствие GDPR, защита данных 100%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-target="150">0</div>
+            <p class="stat-label">+ стран выплат</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="5000">0</div>
+            <p class="stat-label">+ клиентов</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="1000">0</div>
+            <p class="stat-label">млн $ выплачено</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="24">0</div>
+            <p class="stat-label">ч на подключение</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="security" id="security">
+      <div class="container">
+        <div class="section-header">
+          <h2>Безопасность и комплаенс</h2>
+          <p>Мы соответствуем всем требованиям законодательства РФ и международных стандартов</p>
+        </div>
+
+        <div class="security-grid">
+          <div class="security-card">
+            <div class="security-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>KYC/KYB</h3>
+            <p>Полная верификация клиентов и исполнителей, проверка на чёрные списки</p>
+          </div>
+
+          <div class="security-card">
+            <div class="security-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" stroke-width="2"/>
+                <polyline points="13 2 13 9 20 9" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Все документы</h3>
+            <p>Договоры, акты, инвойсы, налоговые отчёты — в личном кабинете</p>
+          </div>
+
+          <div class="security-card">
+            <div class="security-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke-width="2"/>
+                <polyline points="14 2 14 8 20 8" stroke-width="2"/>
+                <line x1="16" y1="13" x2="8" y2="13" stroke-width="2"/>
+                <line x1="16" y1="17" x2="8" y2="17" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Соответствие закону</h3>
+            <p>Работаем в соответствии с законодательством РФ, GDPR, AML/KYC</p>
+          </div>
+
+          <div class="security-card">
+            <div class="security-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke-width="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Защита IP</h3>
+            <p>Права на результат работ остаются у заказчика, полная конфиденциальность</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payments Scheme Section -->
+    <section class="payments-scheme" id="payments-scheme">
+      <div class="container">
+        <div class="section-header">
+          <h2>Как мы работаем с платежами</h2>
+          <p>Легально, прозрачно и без неприятных сюрпризов</p>
+        </div>
+
+        <div class="payments-content">
+          <div class="payments-diagram">
+            <div class="flow-item">
+              <div class="flow-label">Зарубеж</div>
+              <div class="flow-icon">💵</div>
+              <p>Клиент платит</p>
+            </div>
+
+            <div class="flow-arrow">→</div>
+
+            <div class="flow-item">
+              <div class="flow-label">Наш сервис</div>
+              <div class="flow-icon">🔄</div>
+              <p>Обработка платежа</p>
+            </div>
+
+            <div class="flow-arrow">→</div>
+
+            <div class="flow-item">
+              <div class="flow-label">Россия</div>
+              <div class="flow-icon">🏦</div>
+              <p>Выплата на карту/счёт</p>
+            </div>
+          </div>
+
+          <div class="payments-faq">
+            <h3>Частые вопросы</h3>
+            <div class="faq-mini">
+              <div class="faq-mini-item">
+                <div class="faq-mini-q">Законно ли это?</div>
+                <div class="faq-mini-a">
+                  Да, мы работаем полностью в соответствии с ФЗ‑115, GDPR и AML/KYC. Все договоры и документы готовы к налоговой проверке.
+                </div>
+              </div>
+
+              <div class="faq-mini-item">
+                <div class="faq-mini-q">Какие документы я получу?</div>
+                <div class="faq-mini-a">
+                  Договор, акты выполненных работ, инвойсы, налоговые отчёты — всё в личном кабинете в PDF.
+                </div>
+              </div>
+
+              <div class="faq-mini-item">
+                <div class="faq-mini-q">Помощь с налогами?</div>
+                <div class="faq-mini-a">
+                  Мы предоставляем все документы для вашего бухгалтера. Консультации по налогам — в рамках поддержки.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator" id="calculator">
+      <div class="container">
+        <div class="section-header">
+          <h2>Рассчитайте стоимость</h2>
+          <p>Примерная комиссия под ваш кейс</p>
+        </div>
+
+        <div class="calculator-wrapper">
+          <form class="calculator-form" id="calculator-form">
+            <div class="form-group">
+              <label class="form-label">Тип клиента</label>
+              <select name="client_type" class="form-select" id="calc-type">
+                <option value="">Выберите...</option>
+                <option value="company">Компания</option>
+                <option value="freelancer">Фрилансер</option>
+                <option value="agency">Агентство</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Объём выплат в месяц (USD)</label>
+              <input
+                type="number"
+                name="monthly_volume"
+                class="form-input"
+                id="calc-volume"
+                placeholder="50000"
+                min="0"
+              >
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Валюта дохода</label>
+              <select name="currency" class="form-select" id="calc-currency">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+                <option value="crypto">Crypto</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Схема выплат</label>
+              <select name="scheme" class="form-select" id="calc-scheme">
+                <option value="">Выберите...</option>
+                <option value="rub">Только РФ (в рублях)</option>
+                <option value="mixed">РФ + зарубеж</option>
+                <option value="crypto">С крипто</option>
+              </select>
+            </div>
+          </form>
+
+          <div class="calculator-result">
+            <h3>Итого комиссия</h3>
+            <div class="result-amount">
+              <span id="result-usd">0</span> <span class="result-currency">USD/мес</span>
+            </div>
+            <p class="result-hint">Или ~<span id="result-rub">0</span> ₽</p>
+
+            <button class="btn-primary calculator-cta" data-modal="contact">
+              Уточнить точный расчёт
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Часто задаваемые вопросы</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Как быстро подключиться к вашему сервису?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="6 9 12 15 18 9" stroke-width="2"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Процесс занимает 1–3 дня. Первый день — консультация и согласование условий.
+                Затем KYC/KYB, подписание договоров. Третий день — активация кабинета.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>В каких валютах вы работаете?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="6 9 12 15 18 9" stroke-width="2"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Мы поддерживаем USD, EUR, GBP, CHF, AUD и ещё 100+ валют.
+                Также работаем с основными крипто (Bitcoin, Ethereum, USDT, USDC).
+                Выплаты в РФ — в рублях, в $, евро или на крипто‑кошельки.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Какие документы нужны для подключения?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="6 9 12 15 18 9" stroke-width="2"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Для компаний: выписка из ЕГРЮЛ, устав, паспорт директора.
+                Для фрилансеров: паспорт, ИНН, реквизиты счёта.
+                Весь процесс KYC/KYB занимает 1 день.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Какая комиссия за выплаты?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="6 9 12 15 18 9" stroke-width="2"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Комиссия зависит от объёма и схемы выплат. В среднем 1.5-3% за операцию.
+                Абонентской платы нет. Используйте калькулятор выше для точного расчёта.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Как вы обеспечиваете безопасность?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="6 9 12 15 18 9" stroke-width="2"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Мы используем шифрование данных, соответствуем GDPR, проводим KYC/KYB всех участников,
+                храним данные на защищённых серверах. Все операции отслеживаются в реальном времени.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Поддерживаете ли вы криптовалюту?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="6 9 12 15 18 9" stroke-width="2"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Да, мы работаем с Bitcoin, Ethereum, USDT, USDC и другими популярными криптовалютами.
+                Доступны выплаты на крипто-кошельки и конвертация в фиат.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Как быстро проходят выплаты?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="6 9 12 15 18 9" stroke-width="2"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                В среднем 1-3 рабочих дня. Выплаты в РФ — 1-2 дня.
+                Международные переводы — 2-5 дней в зависимости от страны и банка.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Есть ли минимальная сумма для выплат?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="6 9 12 15 18 9" stroke-width="2"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Минимальная сумма — $100 для международных переводов и 5000₽ для выплат в РФ.
+                Для крипто — эквивалент $50.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Нужно ли платить налоги?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="6 9 12 15 18 9" stroke-width="2"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Да, все доходы подлежат налогообложению в РФ. Мы предоставляем все необходимые документы
+                для вашего бухгалтера и помогаем с консультациями по налогообложению.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Могу ли я отменить платёж?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <polyline points="6 9 12 15 18 9" stroke-width="2"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Да, платёж можно отменить до момента его обработки (обычно в течение 2 часов после инициации).
+                После отправки отмена возможна только через поддержку.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta" id="final-cta">
+      <div class="container">
+        <div class="final-cta__inner">
+          <div class="final-cta__content">
+            <h2>Проверьте, подойдёт ли вам наш сервис</h2>
+            <p>
+              Оставьте заявку, и наш специалист свяжется с вами в течение 15 минут
+            </p>
+          </div>
+
+          <form class="final-form" id="final-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Имя</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-input"
+                  required
+                >
+                <span class="form-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  required
+                >
+                <span class="form-error"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Телефон</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-input"
+                  required
+                >
+                <span class="form-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Компания</label>
+                <input
+                  type="text"
+                  name="company"
+                  class="form-input"
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Расскажите о вашей ситуации</label>
+              <textarea
+                name="message"
+                class="form-textarea"
+                rows="4"
+                placeholder="Например: Компания с зарубежными клиентами, ищем способ безопасно платить подрядчикам..."
+              ></textarea>
+            </div>
+
+            <div class="form-checkbox">
+              <input
+                type="checkbox"
+                name="agree"
+                id="agree-final"
+                required
+              >
+              <label for="agree-final">
+                Согласен с <a href="#" target="_blank">политикой конфиденциальности</a>
+              </label>
+            </div>
+
+            <button type="submit" class="btn-primary btn-primary--full-width">
+              Отправить заявку
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__col">
+          <h4>О сервисе</h4>
+          <p>Легальные выплаты и контракты для IT‑специалистов и компаний с доходом из‑за рубежа.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Меню</h4>
+          <ul>
+            <li><a href="#for-whom">Для кого</a></li>
+            <li><a href="#how-it-works">Как это работает</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#final-cta">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Контакты</h4>
+          <p>Email: <a href="mailto:hello@mvpfinance2025.com">hello@mvpfinance2025.com</a></p>
+          <p>Phone: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Соцсети</h4>
+          <div class="social-links">
+            <a href="#" title="Telegram">Telegram</a>
+            <a href="#" title="LinkedIn">LinkedIn</a>
+            <a href="#" title="Twitter">Twitter</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2025 MVP Finance. Все права защищены.</p>
+        <ul class="footer__legal">
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Условия использования</a></li>
+          <li><a href="#">Реквизиты</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Container -->
+  <div id="modal-container"></div>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MVP Finance 2025",
+    "description": "Легальные выплаты и контракты для IT‑специалистов",
+    "url": "https://mvpfinance2025.com",
+    "logo": "https://mvpfinance2025.com/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "telephone": "+7-999-123-45-67",
+      "email": "hello@mvpfinance2025.com"
+    }
+  }
+  </script>
+
+  <!-- Scripts -->
+  <script type="module" src="/scripts/main.js"></script>
+</body>
+</html>
